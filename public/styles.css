@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Manrope", sans-serif;
+  background: linear-gradient(180deg, #08111f 0%, #091220 52%, #060d17 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.restored-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.mockup-stage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-shell {
+  width: min(100%, 1560px);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  background: rgba(6, 11, 20, 0.94);
+}
+
+.mockup-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 720px) {
+  .restored-page {
+    padding: 0.75rem;
+  }
+
+  .mockup-shell {
+    border-radius: 1rem;
+  }
+}
